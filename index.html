@@ -8,16 +8,17 @@
     <a-scene embedded arjs="sourceType: webcam; trackingMethod: best;">
         <!-- Use Custom "222" Marker -->
         <a-marker type="pattern" url="marker.patt">
-            <!-- Floating Transparent Red Square (Debug Layer) -->
+            <!-- Removed Debug Red Plane (In Case Needed Later)
             <a-plane position="0 0.05 0" rotation="-90 0 0" width="1" height="1" color="red" material="opacity: 0.3; transparent: true; side: double;"></a-plane>
+            -->
 
-            <!-- Load the 3D Rose Model (Force Scaling & Rotation) -->
+            <!-- Load the 3D Rose Model (Now Rotated by 70 Degrees Clockwise) -->
             <a-entity position="0 0.5 0">
                 <a-entity 
                     gltf-model="pale_orange_rosename_unknown-2.glb"
-                    scale="10 10 10"          <!-- Force scaling to be MUCH larger -->
-                    position="0 0 0"         <!-- Centered on the marker -->
-                    rotation="0 0 0">        <!-- Reset rotation for testing -->
+                    scale="10 10 10"           <!-- Keeps the proper size -->
+                    position="0 0 0"          <!-- Keeps it centered on marker -->
+                    rotation="0 70 0">        <!-- Rotates 70° clockwise -->
                 </a-entity>
             </a-entity>
         </a-marker>
