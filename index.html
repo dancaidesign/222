@@ -11,12 +11,12 @@
             <!-- Floating Transparent Red Square (Debug Layer) -->
             <a-plane position="0 0.05 0" rotation="-90 0 0" width="1" height="1" color="red" material="opacity: 0.3; transparent: true; side: double;"></a-plane>
 
-            <!-- Load the 3D Rose Model -->
+            <!-- Load the 3D Rose Model (10x Bigger) -->
             <a-entity 
-                gltf-model="pale_orange_rosename_unknown-2.glb" 
-                position="0 0.2 0"   <!-- Lift the rose slightly above the marker -->
-                rotation="-90 0 0"   <!-- Rotate it so it sits properly -->
-                scale="2 2 2"> <!-- Make sure it's big enough -->
+                gltf-model="rose_scan.glb" 
+                position="0 0.2 0"   <!-- Lift it above the marker -->
+                rotation="-90 0 0"   <!-- Rotate to stand correctly -->
+                scale="3 3 3">       <!-- 10x bigger than before -->
             </a-entity>
         </a-marker>
 
